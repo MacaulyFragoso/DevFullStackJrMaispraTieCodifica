@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: rgb(196, 88, 36);
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+/* Estilização missão e visão */
+main {
+    background-color: rgb(244, 244, 244);
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+/* Estilização do rodapé */
+footer {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid rgb(85, 85, 85);
+}
