@@ -28,3 +28,20 @@ footer {
     padding: 15px;
     border: 2px solid rgb(85, 85, 85);
 }
+
+/* Estilo para todos os subtítulos h2 */
+h2 {
+    font-size: 1.8em;
+    text-decoration: underline;
+}
+
+/* Classe para texto em destaque */
+.destaque {
+    font-style: italic;
+    background-color: rgb(255, 255, 221);
+}
+
+/* ID para parágrafo importante */
+#importante {
+    border-top: 2px solid rgb(83, 83, 79);
+}
