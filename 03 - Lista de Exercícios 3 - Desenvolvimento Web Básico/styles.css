@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    margin: 0;
 }
 
 /* Estilização do cabeçalho */
@@ -9,6 +10,35 @@ header {
     margin: 10px;
     padding: 20px;
     border: 2px solid rgb(0, 0, 0);
+    position: relative; /* Necessário para posicionar o menu hamburger */
+    text-align: center;
+}
+
+/* Estilização da navegação */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* Botão Hamburger */
+.hamburger-menu {
+    display: none; /* Escondido por padrão */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 /* Estilização missão e visão */
@@ -18,6 +48,7 @@ main {
     margin: 10px;
     padding: 20px;
     border: 2px solid rgb(0, 0, 0);
+    text-align: center;
 }
 
 /* Estilização do rodapé */
@@ -27,9 +58,10 @@ footer {
     margin: 10px;
     padding: 15px;
     border: 2px solid rgb(85, 85, 85);
+    text-align: center;
 }
 
-/* Estilo para todos os subtítulos h2 */
+/* Estilização para o subtítulo h2 */
 h2 {
     font-size: 1.8em;
     text-decoration: underline;
@@ -46,13 +78,15 @@ h2 {
     border-top: 2px solid rgb(83, 83, 79);
 }
 
-/* --- Estilos da Galeria --- */
+/* Estilos da Galeria */
 
 /* Contêiner flex para centralizar a galeria */
 .gallery-container {
     display: flex;
     justify-content: center;
     padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Grid para organizar as imagens */
@@ -74,7 +108,7 @@ h2 {
 .gallery-grid img {
     max-width: 100%;
     height: auto;
-    display: block; /* Remove espaço extra abaixo da imagem */
+    display: block;
 }
 
 .gallery-grid figcaption {
@@ -83,14 +117,41 @@ h2 {
     background-color: #f2f2f2;
 }
 
-/* Media Query para telas médias (tablets) */
+/* Media Query para o menu hamburger e layout */
+@media (max-width: 600px) {
+    .hamburger-menu {
+        display: block; /* Mostra o hamburger */
+    }
+
+    .nav-links {
+        display: none; /* Esconde a navegação normal */
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(179, 79, 32);
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }
+    
+    .nav-links.active {
+        display: flex; /* Mostra a navegação quando ativa */
+    }
+
+    .nav-links a {
+        padding: 15px;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+/* Media Query para telas médias */
 @media (max-width: 768px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Media Query para telas pequenas (celulares) */
+/* Media Query para telas pequenas */
 @media (max-width: 480px) {
     .gallery-grid {
         grid-template-columns: 1fr;
