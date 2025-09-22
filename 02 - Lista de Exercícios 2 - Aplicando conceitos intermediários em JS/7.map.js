@@ -1,3 +1,4 @@
+// Array de produtos como exemplo
 const produtos = [
   { nome: "Notebook", preco: 2500 },
   { nome: "Celular", preco: 1500 },
@@ -6,10 +7,11 @@ const produtos = [
   { nome: "Monitor", preco: 1200 }
 ];
 
- // Ordena produtos por preço e retorna uma lista com os nomes.
-@param {Array<Object>} produtos
-@returns {Array<string>}
-
+/**
+ * Ordena produtos por preço e retorna uma lista com os nomes.
+ * @param {Array<Object>} produtos 
+ * @returns {Array<string>} 
+ */
 const obterNomesOrdenadosPorPreco = (produtos) => {
 
   // Ordena o array com base no preço de cada produto
