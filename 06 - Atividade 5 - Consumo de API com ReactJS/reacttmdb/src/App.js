@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-// Chave da API (substitua pela sua)
 const API_KEY = '9993098c4f60c1be65629bc3ae211e12';
 const API_URL = 'https://api.themoviedb.org/3';
 
