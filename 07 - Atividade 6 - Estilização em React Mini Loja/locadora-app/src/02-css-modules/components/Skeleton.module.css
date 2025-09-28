@@ -1,0 +1,29 @@
+.skeletonCard {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.skeletonImage {
+  aspect-ratio: 2 / 3;
+  background-color: var(--color-skeleton-base);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.skeletonContent {
+  padding: 1rem;
+}
+.skeletonLine {
+  height: 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-skeleton-base);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.skeletonButton {
+  height: 2.75rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-skeleton-base);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse {
+  50% { opacity: .5; }
+}

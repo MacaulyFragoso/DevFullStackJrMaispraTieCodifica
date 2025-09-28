@@ -1,0 +1,16 @@
+.btn {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.solid {
+  background-color: var(--color-primary);
+  color: white;
+}
+.solid:hover {
+  background-color: var(--color-primary-hover);
+}
